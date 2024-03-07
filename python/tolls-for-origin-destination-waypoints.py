@@ -11,7 +11,9 @@ headers = {"x-api-key": TOLLGURU_API_KEY, "Content-Type": "application/json"}
 body = {
     "from": {"address": "HWY-402 Point Edward, ON N7V Canada"},
     "to": {"address": "I-94 Port Huron, MI 48060 USA"},
-    "vehicleType": "2AxlesAuto",
+    "vehicle": {
+        "type": "2AxlesAuto",
+    },
 }
 
 response = requests.post(
